@@ -22,7 +22,7 @@ public class P02bomb {
                     playerPos[1] = col;
                     matrix[playerPos[0]][playerPos[1]] = "+";
                 }
-                if (matrix[row][col].equals("B")){
+                if (Objects.equals(matrix[row][col],"B")){
                     bombNumber++;
                 }
             }
@@ -34,7 +34,7 @@ public class P02bomb {
         for (String s : command){
             changePosition(s,playerPos,n);
 
-            if (matrix[playerPos[0]][playerPos[1]].equals("B")){
+            if (Objects.equals(matrix[playerPos[0]][playerPos[1]],"B")){
                 System.out.println("You found a bomb!");
                 bombNumber--;
                 if (bombNumber == 0){
