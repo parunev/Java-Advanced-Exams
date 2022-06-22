@@ -45,7 +45,7 @@ public class P02selling {
         }
 
         if (outPastry[0] == 1){
-            System.out.println("Bad news, you are out of the bakery.");
+            System.out.println("Bad news, you are out of the E09RetakeExam16december2020.bakery.");
         }else{
             System.out.println("Good news! You succeeded in collecting enough money!");
         }
